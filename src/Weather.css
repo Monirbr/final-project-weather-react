@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Nerko+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+ font-family: 'Acme', sans-serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.main{
+    margin: 30px;
+}
+.inputs{
+    margin-bottom: 30px;
+}
+input{
+    border-radius: 10px;
+    padding: 12px;
+}
+.search{
+    margin-right: 20px;
+    width: 75%;
+    background-color: #ebe7f4;
+    border: none;
+}
+::placeholder{
+ opacity: 0.5;
+ font-family:'Acme', sans-serif;
+ letter-spacing: 0.1rem;
+
+}
+.submit{
+    font-family:'Acme', sans-serif;
+    font-size: 14px;
+    color:white;
+    background-color:#B296F5 ;
+    border: none;
+    letter-spacing: 0.05rem;
+    padding: 11px;
+
+}
+.city{
+    font-size: 22px;
+    color: rgb(59, 59, 59);
+}
+.desc{
+    line-height: 2rem;
+    font-size: 18px;
+    color: rgb(109, 109, 109);
+}
+.desc span{
+    color:#F65584;
+}
+.temp{
+    margin: 0 auto ;
+    font-size: 46px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temp span{
+     font-family: 'Acme', sans-serif;
+     font-size: 25px;
+     position: absolute;
+     top: 20px;
+     left: 260px;
+     right: 0;
+}
+.date{
+    display: flex;
+}
