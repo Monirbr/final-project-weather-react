@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <Weather city="tehran" />
+      <a>open-Sourced on GitHub</a>
     </div>
+
   );
 }
 
