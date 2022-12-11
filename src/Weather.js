@@ -8,17 +8,17 @@ function Weather (props){
      const[city, setCity]=useState(props.city);
     const[unit, setUnit]=useState({ready:false});
     function handleResponse(response){
-        console.log(response.data)
+        // console.log(response.data)
         setUnit({
                ready:true,
-            //    city:response.data.city,
+            
                temperature: response.data.temperature.current,
                wind: response.data.wind.speed,
                humidity: response.data.temperature.humidity,
                description: response.data.condition.description,
-               icon:response.data.condition.icon_url,
-               date:new Date(response.data.time * 1000),
-               city:response.data.city
+               icon: response.data.condition.icon_url,
+               date: new Date(response.data.time * 1000),
+               city: response.data.city,
             })
     }
 
@@ -50,7 +50,7 @@ return (
       </form>
       </div>
      <Search data={unit} />   
-     {/* <WeatherForecast data={unit}/> */}
+     <WeatherForecast name = {unit.city} data={unit}/>
       </div>
 );
 }else{
