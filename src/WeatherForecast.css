@@ -17,15 +17,25 @@ hr{
 }
 .forecast-day{
     color:#6D6D6D;
+    text-align: center;
+
 }
+
+.temperature{
+  display: flex;
+}
+
 .max{
+   padding: 0;
     margin-right: 15px;
     color:#404040 ;
 }
 .min{
     color: #F65584;
     opacity: 0.8;
+    
 }
 .forecast-icon{
- 
+ width: 90px;
+   margin: 15px;
 }
